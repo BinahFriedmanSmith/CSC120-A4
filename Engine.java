@@ -1,8 +1,7 @@
 /**
  * simulates a train engine
  */
-public class Engine 
-{
+public class Engine {
 
     private final FuelType fuel;
     private final double fuelMax;
@@ -13,8 +12,7 @@ public class Engine
     * @param fuel Type of fuel the engine uses
     * @param fuelMax Fuel capacity
     */
-    public Engine(FuelType fuel, double fuelMax) 
-    {
+    public Engine(FuelType fuel, double fuelMax) {
         this.fuel = fuel;
         this.fuelMax = fuelMax;
         this.fuelNow = fuelMax;
@@ -23,8 +21,7 @@ public class Engine
     /**
     * Sets current fuel level to maximum fuel level
     */
-    public void refuel() 
-    {
+    public void refuel() {
         this.fuelNow = this.fuelMax;
     }
 
@@ -32,8 +29,7 @@ public class Engine
     * Uses 1 fuel and prints premaining level. If out of fuel, says so and returns false. Otherwise returns true
     * @return Whether or not there is a positive amount of fuel left.
     */
-    public boolean go() 
-    {
+    public boolean go() {
         this.fuelNow -= 1;        
         if (this.fuelNow > 0) {
             System.out.println("Remaining Fuel: " + this.fuelNow +"/" + this.fuelMax);
@@ -49,8 +45,7 @@ public class Engine
      * Returns fuel type
      * @return returns fuel type
      */
-    public FuelType getFuel() 
-    {
+    public FuelType getFuel() {
         return this.fuel;
     }
 

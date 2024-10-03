@@ -14,8 +14,7 @@ public class Passenger {
     * @return string to print
     */
     @Override
-    public String toString()
-    {
+    public String toString() {
         return name;
     }
 
@@ -24,8 +23,7 @@ public class Passenger {
     * @param c car to board
     * @return success of attempt
     */
-    public boolean boardCar(Car c)
-    {
+    public boolean boardCar(Car c) {
         //ask car to add this passenger
         return c.addPassenger(this);
     }
@@ -35,8 +33,7 @@ public class Passenger {
     * @param c car to leave
     * @return success of attempt
     */
-    public boolean getOffCar(Car c)
-    {
+    public boolean getOffCar(Car c) {
         //ask car to remove this passenger
         return c.removePassenger(this);
     }
