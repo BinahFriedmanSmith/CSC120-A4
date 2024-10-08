@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * simulates a train. manages aspects such as engine and passenger cars
  */
 public class Train {
-    private Engine engine;
-    private ArrayList<Car> cars;
+    private final Engine engine;
+    private final ArrayList<Car> cars;
 
     /**
      * Creates a Train with given attriibutes

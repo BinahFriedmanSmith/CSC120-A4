@@ -5,7 +5,7 @@ import java.util.ArrayList;
  */
 public class Car
 { 
-    private ArrayList<Passenger> passengers;
+    private final ArrayList<Passenger> passengers;
     private final int capacity;
 
     /**
